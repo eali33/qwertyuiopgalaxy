@@ -1,0 +1,191 @@
+
+.battle-row {
+	display: flex;
+}
+.player {
+	flex-direction: row-reverse;
+}
+.game-container {
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: "Courier New", Courier, monospace;
+}
+.name {
+	font-size: larger;
+}
+.sprite {
+	width: 192px;
+	margin: -40px;
+}
+.battle-row.player {
+	align-items: flex-end;
+	justify-content: space-between;
+}
+.info-block {
+	width: 140px;
+}
+.info-block.right {
+	margin-left: 40px;
+}
+.info-block.left {
+	margin-right: 40px;
+}
+.hp-container {
+	border-bottom: 3px solid black;
+
+	border-radius: 2px;
+	padding-left: 6px;
+	padding-right: 6px;
+	font-size: small;
+	font-weight: bolder;
+}
+.bottom-text {
+	text-align: center;
+	font-size: large;
+	font-weight: bold;
+}
+.right .hp-container {
+	border-right: 3px solid black;
+	margin-right: 10px;
+	text-align: right;
+	background-image: linear-gradient(green,lime,cyan);
+}
+.left .hp-container {
+	border-left: 3px solid black;
+	margin-left: 10px;
+	background-image: linear-gradient(red,orange);
+}
+.bottom-box-border {
+	margin-top: 10px;
+	height: 100px;
+	background-color: black;
+	position: relative;
+
+	overflow: hidden;
+
+	clip-path: polygon(
+		0 10px,
+		10px 0,
+		282px 0,
+		100% 10px,
+		100% 90px,
+		282px 100%,
+		10px 100%,
+		0% 90px,
+		0% 10px
+	);
+}
+.bottom-box {
+	height: 94px;
+	width: 286px;
+	top: 3px;
+	left: 3px;
+	background-image: linear-gradient(white,gray,black);
+	position: absolute;
+	display: flex;
+
+	padding: 2px;
+	box-sizing: border-box;
+	overflow: hidden;
+
+	clip-path: polygon(
+		0 8px,
+		8px 0,
+		278px 0,
+		100% 8px,
+		100% 86px,
+		278px 100%,
+		8px 100%,
+		0% 86px,
+		0% 8px
+	);
+}
+.bottom-box2 {
+	height: 94px;
+	width: 286px;
+	top: 3px;
+	left: 3px;
+	background-image: linear-gradient(blue,cyan,white);
+	position: absolute;
+	display: flex;
+	font-size: smaller;
+
+	padding: 2px;
+	box-sizing: border-box;
+	overflow: hidden;
+
+	clip-path: polygon(
+		0 8px,
+		8px 0,
+		278px 0,
+		100% 8px,
+		100% 86px,
+		278px 100%,
+		8px 100%,
+		0% 86px,
+		0% 8px
+	);
+}
+#message {
+	width: 45%;
+	font-size: medium;
+	padding: 5px;
+}
+#messages {
+	width: 45%;
+	font-size: medium;
+	padding: 5px;
+}
+.menu {
+	flex: 1;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 50% 50%;
+	border-left: 1px solid black;
+}
+button {
+	border: none;
+	font-size: small;
+	text-align: left;
+	padding-left: 6px;
+	font-family: "Courier New", Courier, monospace;
+	background-color: white;
+}
+button2 {
+	border: none;
+	font-size: small;
+	text-align: absolute;
+	padding-left: 6px;
+	font-family: "Courier New", Courier, monospace;
+	background-color: rgb(143, 143, 143);
+}
+button:active {
+	color: rgb(197, 197, 197);
+}
+button2:active {
+	color: rgb(255, 0, 0);
+}
+button3 {
+	border: none;
+	font-size: medium;
+	text-align: right;
+	padding-left: 6px;
+	font-family: "Courier New",;
+	background-color: rgb(255, 255, 255);
+}
+
+.pp-chart {
+	height: 94px;
+	width: 286px;
+	top: 3px;
+	left: 3px;
+	background-image: linear-gradient(blue,cyan,white);
+	position: absolute;
+	display: flex;
+	font-size: smaller;
+}
+
+
